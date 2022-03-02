@@ -14,8 +14,9 @@ If there are enough seats for a reservation to sit next to each other, they prio
 People prefer sitting in rows that are farther back.
 
 ## Algorithm
-If the number of seats they are trying to reserve is bigger than the total number of seats, we say there are not enough seats in the output file for this reservation and skip it. \
-The algorithm goes through reservations sequentially and tries to sit the parties in the same row, going down the rows until it either sits the entire party in a row or finds out it can't. \
+If the number of seats they are trying to reserve is bigger than the total number of seats, we say there are not enough seats in the output file for this reservation and skip it. 
+
+The algorithm goes through reservations sequentially and tries to sit the parties in the same row, going down the rows until it either sits the entire party in a row or finds out it can't. 
 
 If it can't sit the party all in the same row, it starts sitting them from the best available seats(the farthest back that are free) next to each other and goes down row by row until the entire party is seated. 
 
