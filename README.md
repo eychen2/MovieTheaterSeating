@@ -3,6 +3,8 @@ Given a list of reservations in order, output a seating that seats groups at lea
 ## Language
 C++
 ## Assumptions
+We assume that the inputs will be correctly formatted in the form R#### NumberOfTickets
+## Defining Customer Satisfaction
 We prioritize the reservations in order and we will not assign seats for reservations if there are not enough available seats for the entire party. 
 
 If there are enough seats to fit the reservation, they are more satisfied being able to go then not being able to go. 
