@@ -18,4 +18,8 @@ The algorithm goes through reservations sequentially and tries to sit the partie
 If it can't sit the party all in the same row, it starts sitting them from the best available seats(the farthest back that are free) next to each other and goes down row by row until the entire party is seated. 
 
 ## How to run
+Download the src folder 
 
+Make the executable for the cpp file with the command g++ -std=c++17 -o main main.cpp
+
+To run the file, depending on the OS do main [inputfilepath] or ./main [inputfilepath]
