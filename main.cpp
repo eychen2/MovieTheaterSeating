@@ -44,7 +44,7 @@ int main(int argc, char *argv[]) {
                     seatsReserved += c + to_string(layout[c] + i+1) + ", ";
                 layout[c] += reserve + 3;
                 if (layout[c] > 20)
-                    numSeats -= 20;
+                    numSeats -= reserve;
                 else
                     numSeats -= reserve + 3;
                 break;
