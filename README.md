@@ -28,3 +28,7 @@ Go into that folder through the command line.
 Make the executable for the cpp file with the command g++ -std=c++17 -o main main.cpp
 
 To run the file, depending on the OS do main [inputfilepath] or ./main [inputfilepath]
+
+The program will make the output file in the same place as your executable called output.txt as wellas print the path
+
+If you are not using windows and using something like cygwin to run it like me, the absolute path will put stuff like \cygdrive\c\Users... to get the absolute path from this, just get rid of the \cygdrive and turn the c into whatever disk it's supposed to be on.
