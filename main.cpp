@@ -1,13 +1,11 @@
 #include <iostream>
 #include <fstream>
-#include <algorithm>
-#include <vector>
-#include<unordered_map>
-#include<map>
+#include <unistd.h>
+#include <unordered_map>
+
 
 int numSeats = 200;
 using namespace std;
-
 int main(int argc, char *argv[]) {
     if (argc != 2) {
         printf("You have not entered the right amount of parameters\n");
@@ -17,7 +15,10 @@ int main(int argc, char *argv[]) {
     input.open(argv[1]);
     string cheese;
     ofstream output;
-    output.open("C:\\Users\\echen\\Downloads\\OptimalSeatings.txt");
+    char buffer[FILENAME_MAX];
+    getcwd(buffer,FILENAME_MAX);
+    string path(buffer);
+    output.open("OptimalSeatings.txt");
     unordered_map<char, int> layout;
     char bestRow = 'A';
     while (bestRow != 'K') {
@@ -34,7 +35,7 @@ int main(int argc, char *argv[]) {
         string seatsReserved;
         if (reserve > numSeats)
             canSit=false;
-        if (reserve == -1)
+        if (reserve <= -1)
             break;
         for (char c = bestRow; c >= 'A'&&canSit; --c) {
             if (20 - layout[c] - reserve >= 0) {
@@ -83,5 +84,9 @@ int main(int argc, char *argv[]) {
         canSit=true;
     }
     output.close();
-    printf("C:\\Users\\echen\\Downloads\\OptimalSeatings.txt");
+    for(unsigned int i=0; i<path.size();++i)
+        if(path[i]=='/')
+            path[i]='\\';
+    path+="\\OptimalSeatings.txt";
+    printf("%s\n",path.c_str());
 }
