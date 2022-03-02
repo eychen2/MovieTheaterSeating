@@ -6,6 +6,8 @@ C++
 We assume that the inputs will be correctly formatted in the form R#### NumberOfTickets.
 
 If all the seats are filled, we just ignore any reservations afterwards.
+
+You have a C and C++ compiler installed and can compile the code from the command line using something like g++
 ## Defining Customer Satisfaction
 We prioritize the reservations in order and we will not assign seats for reservations if there are not enough available seats for the entire party. 
 
