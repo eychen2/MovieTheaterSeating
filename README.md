@@ -23,7 +23,7 @@ The algorithm goes through reservations sequentially and tries to sit the partie
 If it can't sit the party all in the same row, it starts sitting them from the best available seats(the farthest back that are free) next to each other and goes down row by row until the entire party is seated. 
 
 ## How to run
-Download the src folder 
+Download the all of the files 
 
 Go into that folder through the command line.
 
