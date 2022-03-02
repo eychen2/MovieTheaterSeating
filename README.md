@@ -20,6 +20,8 @@ If it can't sit the party all in the same row, it starts sitting them from the b
 ## How to run
 Download the src folder 
 
+Go into that folder through the command line.
+
 Make the executable for the cpp file with the command g++ -std=c++17 -o main main.cpp
 
 To run the file, depending on the OS do main [inputfilepath] or ./main [inputfilepath]
