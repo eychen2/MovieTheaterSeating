@@ -36,5 +36,7 @@ The program will make the output file in the same place as your executable calle
 If you are not using windows and using something like cygwin to run it like me, the absolute path will put stuff like \cygdrive\c\Users... to get the absolute path from this, just get rid of the \cygdrive and turn the c into whatever disk it's supposed to be on.
 ## How to test
 
-Run the code with test input files given in the github 
+Run the code with test input files given. You should be able to run each one by doing main [tests\test[testnumber].txt] given you are in the correct directory as your executable as outlined above
+
 Each time, use the command diff -w OptimalSeatings.txt test[test#]solution.txt. EX: After running it for test1.txt, run diff -w OptimalSeatings.txt test1solution.txt
+It will output the difference if there is any difference and will output nothing if there is no differences.
